@@ -166,6 +166,13 @@ match(lula: Client {name: "Lula Molusco"}) delete lula
 ```
 
 To enforce the idea of the general format of the commands, see how we consult the "patrick" client:
+
 ```
 match(patrick: Client {name: "Patrick"}) return patrick
-``
+```
+
+This way you can insert a new property in a node or update its value:
+
+```
+match(patrick: Client {name: "Patrick"}) set patrick.age = 44
+```
