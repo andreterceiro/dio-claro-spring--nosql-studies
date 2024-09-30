@@ -176,3 +176,5 @@ This way you can insert a new property in a node or update its value:
 ```
 match(patrick: Client {name: "Patrick"}) set patrick.age = 44
 ```
+
+The **`relatioships`** and `nodes` can have `properties`.
