@@ -29,3 +29,7 @@ As in a NoSQL world is more easy to deal with the question of the horizontal sca
 ### Use of SQL or no
 
 - In the relational databases world SQL is the language used and in the NoSQL world, SQL is not used (or not used often).
+
+### Performance
+
+- As SQL databases is more frequent related to vertical scalability, the permormance is often increased by upgrading the hardware, like disks, bur in the case of NoSQL databases, as they are often linked to a horizonal scalability, the often receives a performance increase by the things like the size of the cluster and the performance of the network of the cluster.
