@@ -72,3 +72,11 @@ Please initially see this image:
 ![graphs general overview](images/graphs-general-overview.png)
 
 Basically this type of database contains `nodes` and `vertices`. `Nodes` are the data and `vertices` are the relations.
+
+Ranking of databases oriented to graphs most used:
+![ranking of databases oriented to graphs most used](images/ranking-of-databases-oriented-to-graphs-most-used.png)
+
+About Neo4j:
+- Uses the language "cypher";
+- Apply the ACID (atomicity, consistency, isolation, durability) properties;
+- Is the leader in the previous image :).
