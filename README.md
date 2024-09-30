@@ -137,7 +137,7 @@ An the graph will be now:
 
 ![graph 3 in Neo4j](images/graph-3-neo4j.png)
 
-Different colors? Yes, because they have different properties.
+Different colors? Yes, because they have different labels (teacher said about properties, but I saw that different labes result in different colors as you can see comparing all images).
 
 With this script we can create a new "Bloqueado" relation:
 
