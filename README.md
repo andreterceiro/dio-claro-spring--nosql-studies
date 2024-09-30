@@ -126,3 +126,15 @@ Added 2 labels, created 2 nodes, set 4 properties, created 1 relationship, compl
 We resulted in this image after inserting more data
 
 ![neo4j new graphical representation](images/neo4j-new-graphical-representation.png)
+
+We can also insert an empty object this way:
+
+```
+create(:object)
+```
+
+An the graph will be now:
+
+![graph 3 Neo4j](images/graph-3-neo4j.png)
+
+Different colors? Yes, because they have different properties.
