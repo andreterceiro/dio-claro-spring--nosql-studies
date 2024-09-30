@@ -22,3 +22,6 @@ The deficiencies of SQL databases make born the NoSQL databases.
 
 As in a NoSQL world is more easy to deal with the question of the horizontal scalability, you can interact better with a non constant request level, as you can scale horizontally more easy.
 
+### Schemas or structure
+
+- In a SQL world you need a rigid definition of tables and other things like relations and in a NoSQL world you almost no need to pre define a structure;
