@@ -49,8 +49,11 @@ In general the NoSQL databases do not have the concept of `"transaction"` except
 
 ## Types of NoSQL databases
 
-Initially, please see this image:
+The thing that is common between the several types of NoSQL databases is that they do not use SQL (in most part of the time, they do not depends on SQL).
+We have this image about a ranking of a use of databases:
+
+![ranking of databases](images/ranking-of-databases.png)
+
+The types of NoSQL databases:
 
 ![types of NoSQL databases](images/types-of-nosql-databases.png)
-
-The thing that is common between the several types of NoSQL databases is that they do not use SQL (in most part of the time, they do not depends on SQL).
