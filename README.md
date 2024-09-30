@@ -25,3 +25,7 @@ As in a NoSQL world is more easy to deal with the question of the horizontal sca
 ### Schemas or structure
 
 - In a SQL world you need a rigid definition of tables and other things like relations and in a NoSQL world you almost no need to pre define a structure;
+
+### Use of SQL or no
+
+- In the relational databases world SQL is the language used and in the NoSQL world, SQL is not used (or not used often).
