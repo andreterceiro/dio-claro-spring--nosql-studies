@@ -110,3 +110,15 @@ The output of the above command was:
 ![example of a consulting in Neo4j](images/example-consulting-neo4j.png)
 
 You can saw that we can consult all the documents without type a paramenter related to a thing like a table.
+
+With the next command we can create two nodes and a relationship:
+
+```
+create (:Client {name: "Lula Molusco", age: 50}) - [:Bloqueado] -> (:Client{name: "Patrick", hooblies : ["caçar água viva"]})
+```
+
+The return of the previous command:
+
+```
+Added 2 labels, created 2 nodes, set 4 properties, created 1 relationship, completed after 15 ms.
+```
