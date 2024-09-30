@@ -178,3 +178,13 @@ match(patrick: Client {name: "Patrick"}) set patrick.age = 44
 ```
 
 The **`relatioships`** and `nodes` can have `properties`.
+
+You can insert a new `label` in a `node` this way:
+
+```
+match(patrick:Client {name: "Patrick"}) set patrick: marinho
+```
+
+You can see the result in this image. I added 2 new labels:
+
+![new-labels-neo4j](images/new-labels-neo4j.png)
