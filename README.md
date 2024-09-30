@@ -135,6 +135,26 @@ create(:object)
 
 An the graph will be now:
 
-![graph 3 Neo4j](images/graph-3-neo4j.png)
+![graph 3 in Neo4j](images/graph-3-neo4j.png)
 
 Different colors? Yes, because they have different properties.
+
+With this script we can create a new "Bloqueado" relation:
+
+```
+match(lula:Client{name: "Lula Molusco"}), (patrick: Client {name: "Patrick"}) create (lula) -[:Bloqueado] -> (patrick)
+```
+
+Explanation: we was getting two datas with the label "client" related to the parameters to filter (example "{name: "Lula Molusco"}) and this returned data was saved in variables ("lula" and "patrick"). After the dash signal ("-") with this two variables we created a "Bloqueado" relation.
+
+The resulted graph was:
+![graph 4 in Neo4j](images/graph-4-neo4j.png)
+
+Deleting the 2 relationships "Bloqueado" of the above image:
+
+```
+match(lula:Client {name: "Lula Molusco"}) - [relacionamento: Bloqueado] - () delete relacionamento
+```
+
+As you can see, the script have a similar format. The result graph now is:
+![Graph 5 in Noe4j](images/graph-5-new4j.png)
