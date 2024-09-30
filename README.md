@@ -80,3 +80,33 @@ About Neo4j:
 - Uses the language "cypher";
 - Apply the ACID (atomicity, consistency, isolation, durability) properties;
 - Is the leader in the previous image :).
+
+In the class we used [this sandbox](https://sandbox.neo4j.com/) of Neo4j.
+
+We created a balnk database and in this blank database we could create a registry using the next command:
+
+```
+create (:Client {name: "Bob Esponja", age: 28, hobbiees:["Caçar água-viva", "comer hamburguer"]})
+```
+
+The output was "`Added 1 label, created 1 node, set 3 properties, completed after 75 ms.`".
+
+I also inserted another node with this command:
+
+```
+create (:Car {windows: 4, color: "red"})
+```
+
+The output was "`Added 1 label, created 1 node, set 2 properties, completed after 14 ms.`".
+
+We can consult all nodes using the next command as example. I used "banana" to demonstrate that this variable name do not matter:
+
+```
+match(banana) return (banana)
+```
+
+The output of the above command was:
+
+![example of a consulting in Neo4j](images/example-consulting-neo4j.png)
+
+You can saw that we can consult all the documents without type a paramenter related to a thing like a table.
