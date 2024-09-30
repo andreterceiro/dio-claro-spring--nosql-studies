@@ -57,3 +57,10 @@ We have this image about a ranking of a use of databases:
 The types of NoSQL databases:
 
 ![types of NoSQL databases](images/types-of-nosql-databases.png)
+
+Some comments:
+
+- Document store: common, can store documents like JSON or XML;
+- Key value: often used for cache;
+- Oriented to columns: more next to relational databases;
+- Graphs: used on social networks or fraud detection as example
