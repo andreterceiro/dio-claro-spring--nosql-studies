@@ -122,3 +122,7 @@ The return of the previous command:
 ```
 Added 2 labels, created 2 nodes, set 4 properties, created 1 relationship, completed after 15 ms.
 ```
+
+We resulted in this image after inserting more data
+
+![neo4j new graphical representation](images/neo4j-new-graphical-representation.png)
