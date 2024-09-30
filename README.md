@@ -41,8 +41,16 @@ Please see the next image:
 
 In general the NoSQL databases do not have the concept of `"transaction"` except for MongoDB. They do not use "`transactions`" to increase high availability and performance.
 
-## Advantages of NoSQL
+### Advantages of NoSQL
 
 - Flexibility;
 - Scalability;
 - High performance.
+
+## Types of NoSQL databases
+
+Initially, please see this image:
+
+![types of NoSQL databases](images/types-of-nosql-databases.png)
+
+The thing that is common between the several types of NoSQL databases is that they do not use SQL (in most part of the time, they do not depends on SQL).
