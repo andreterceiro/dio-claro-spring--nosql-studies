@@ -38,3 +38,5 @@ As in a NoSQL world is more easy to deal with the question of the horizontal sca
 
 Please see the next image:
 ![transactions](images/differences-sql-nosql-transactions.png)
+
+In general the NoSQL databases do not have the concept of `"transaction"` except for MongoDB. They do not use "`transactions`" to increase high availability and performance.
