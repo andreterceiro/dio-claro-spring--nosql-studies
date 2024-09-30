@@ -33,3 +33,8 @@ As in a NoSQL world is more easy to deal with the question of the horizontal sca
 ### Performance
 
 - As SQL databases is more frequent related to vertical scalability, the permormance is often increased by upgrading the hardware, like disks, bur in the case of NoSQL databases, as they are often linked to a horizonal scalability, the often receives a performance increase by the things like the size of the cluster and the performance of the network of the cluster.
+
+### Transactions
+
+Please see the next image:
+![transactions](images/differences-sql-nosql-transactions.png)
