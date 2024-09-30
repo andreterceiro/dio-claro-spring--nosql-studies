@@ -158,3 +158,9 @@ match(lula:Client {name: "Lula Molusco"}) - [relacionamento: Bloqueado] - () del
 
 As you can see, the script have a similar format. The result graph now is:
 ![Graph 5 in Noe4j](images/graph-5-new4j.png)
+
+Deleting a node (not a relation):
+
+```
+match(lula: Client {name: "Lula Molusco"}) delete lula
+```
