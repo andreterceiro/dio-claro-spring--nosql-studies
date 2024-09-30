@@ -63,4 +63,12 @@ Some comments:
 - Document store: common, can store documents like JSON or XML;
 - Key value: often used for cache;
 - Oriented to columns: more next to relational databases;
-- Graphs: used on social networks or fraud detection as example
+- Graphs: used on social networks, games, filesystems or fraud detection as example
+
+## NoSQL databases - graphs
+
+Please initially see this image:
+
+![graphs general overview](images/graphs-general-overview.png)
+
+Basically this type of database contains `nodes` and `vertices`. `Nodes` are the data and `vertices` are the relations.
