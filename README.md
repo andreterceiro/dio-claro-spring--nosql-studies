@@ -188,3 +188,7 @@ match(patrick:Client {name: "Patrick"}) set patrick: marinho
 You can see the result in this image. I added 2 new labels:
 
 ![new-labels-neo4j](images/new-labels-neo4j.png)
+
+Talking about columns and family columns:
+
+![column, family columns](images/column-family-columns.png)
