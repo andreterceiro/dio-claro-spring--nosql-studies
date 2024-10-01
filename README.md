@@ -198,3 +198,7 @@ In a non relational world we have fo every column:
 - key
 - values
 - timestamp
+
+Ranking of databases based on columns or family of columns:
+
+![ranking databases based on columns](images/ranking-databases-based-columns.png)
