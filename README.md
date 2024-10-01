@@ -208,3 +208,9 @@ Terminology related to a NoSQL databases:
 ![terminology nosql](images/terminology-nosql.png)
 
 Talking about NoSQL databases (I not talking that this cannot be applied to other scenarios), you have to make your colsuts bases on columns that have `indexes`, like the `row key`.
+
+## Examples of CQL
+
+Example 1:
+
+![example-1-cql](images/cql-demo-1.png)
