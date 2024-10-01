@@ -211,6 +211,10 @@ Talking about NoSQL databases (I not talking that this cannot be applied to othe
 
 ## Examples of CQL
 
-Example 1:
+Some clausules of CQL:
 
 ![example-1-cql](images/cql-demo-1.png)
+
+Other clausules. One thing that the teacher talked this time was about the fact of the column age be null in case of Patrick (non exists, was not inserted):
+
+![example-2-cql](images/cql-demo-2.png)
