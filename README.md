@@ -226,3 +226,7 @@ Other clausules. The clausules are very similar to `SQL-92` clausules:
 Other clausules. Cassandra seems more next to relational databases than DynamoDB. When I used DynamoDB I am not inserted a column. I inserted the information directly in the JSON of the registry. But see if a registry does not have a information in a column, if I did a where based on this column, the information is not stored (null), see in the next image:
 
 ![example-4-cql](images/cql-demo-4.png)
+
+# Key-value
+
+![key value](images/key-value.png)
