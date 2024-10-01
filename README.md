@@ -192,3 +192,9 @@ You can see the result in this image. I added 2 new labels:
 Talking about columns and family columns:
 
 ![column, family columns](images/column-family-columns.png)
+
+In a non relational world we have fo every column:
+
+- key
+- values
+- timestamp
