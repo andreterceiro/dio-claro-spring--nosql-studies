@@ -218,3 +218,7 @@ Some clausules of CQL:
 Other clausules. One thing that the teacher talked this time was about the fact of the column age be null in case of Patrick (non exists, was not inserted):
 
 ![example-2-cql](images/cql-demo-2.png)
+
+Other clausules. The clausules are very similar to `SQL-92` clausules:
+
+![example-3-cql](images/cql-demo-3.png)
