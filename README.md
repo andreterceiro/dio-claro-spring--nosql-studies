@@ -189,9 +189,9 @@ You can see the result in this image. I added 2 new labels:
 
 ![new-labels-neo4j](images/new-labels-neo4j.png)
 
-Talking about columns and family columns:
+Talking about columns and columnfamilies:
 
-![column, family columns](images/column-family-columns.png)
+![column, columnfamily](images/column-columnfamily.png)
 
 In a non relational world we have fo every column:
 
@@ -199,6 +199,12 @@ In a non relational world we have fo every column:
 - values
 - timestamp
 
-Ranking of databases based on columns or family of columns:
+Ranking of databases based on columns or columnfamily:
 
 ![ranking databases based on columns](images/ranking-databases-based-columns.png)
+
+Terminology related to a NoSQL databases:
+
+![terminology nosql](images/terminology-nosql.png)
+
+Talking about NoSQL databases (I not talking that this cannot be applied to other scenarios), you have to make your colsuts bases on columns that have `indexes`, like the `row key`.
