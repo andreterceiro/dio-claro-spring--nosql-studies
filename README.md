@@ -313,4 +313,27 @@ exists user:name
 # 0 - do not exists
 
 # One comment: the commands are case insensitive, the commands "exists" and "EXISTS" work and are the same
+
+# Lists: you can interact with lists with the commands "lpush" and "lindex"
+lpush c:c 1
+# return example: (integer) 1
+lpush c:c 2
+# return example: (integer) 2
+lpush c:c 3
+# return example: (integer) 3
+lpush c:c 4
+# return example: (integer) 4
+
+# You have the data inserted, but in a random order. See:
+lindex c:c 1
+# return example:"3"
+lindex c:c 2
+# return example: "2"
+lindex c:c 3
+# return example: "1"
+# return example: lindex c:c 4
+(nil)
+lindex c:c 0
+# return example: "4"
+
 ```
