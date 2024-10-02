@@ -245,3 +245,28 @@ Main characteristics of `Redis`:
 ![main characteristics of Redis](images/redis-main-characteristics.png)
 
 In Redis there is a key-value storage without a schema. There is no a thing like a table.
+
+[This site](https://onecompiler.com/redis) as [the link used in the course](http://try.redis.io) is unavailable don't work for make tests on a `Redis` server. So I have to install `Redis` locally, but it was very easy. In a "happy path". you will need only:
+
+```
+# apt update
+sudo apt update
+
+# install
+sudo apt install redis-server -y
+
+# configuring
+# In /etc/redis/redis.conf find the line starting with "supervised" to "supervised systemd" (without quotes)
+
+# start
+sudo systemctl restart redis.server
+
+# checking installation
+sudo systemctl status redis.server
+# Ideally you will see "active (running)" in green
+
+# accessing shell
+redis-cli
+```
+
+I followed the tutorial of [this link](https://linuxhint.com/install_redis_linux_mint/). I installed in Linux Mint 20.
