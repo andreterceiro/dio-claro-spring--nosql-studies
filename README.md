@@ -316,24 +316,39 @@ exists user:name
 
 # Lists: you can interact with lists with the commands "lpush" and "lindex"
 lpush c:c 1
-# return example: (integer) 1
+# return: (integer) 1 - number of items in the stack
 lpush c:c 2
-# return example: (integer) 2
+# return: (integer) 2 - number of items in the stack
 lpush c:c 3
-# return example: (integer) 3
+# return: (integer) 3 - number of items in the stack
 lpush c:c 4
-# return example: (integer) 4
+# return: (integer) 4 - number of items in the stack
 
-# You have the data inserted, but in a random order. See:
+# You have the data inserted, but in like a stack. See:
 lindex c:c 1
-# return example:"3"
+# return:"3"
 lindex c:c 2
-# return example: "2"
+# return: "2"
 lindex c:c 3
-# return example: "1"
-# return example: lindex c:c 4
+# return: "1"
+lindex c:c 4
 (nil)
 lindex c:c 0
-# return example: "4"
+# return: "4"
+
+# You can also use 'lrange'
+lrange c:c 0 0
+# return "4"
+lrange c:C 0 3
+# return - stack
+# 1) "4"
+# 2) "3"
+# 3) "2"
+# 4) "1"
+
+# Number of the items in the stack is returned on push? Yes, see:
+lpush c:c 100
+# return 5
+
 
 ```
