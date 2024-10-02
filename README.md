@@ -376,4 +376,29 @@ lrange g:g 0 1
 type c:c 0
 # Don't work, although we have the value on the position 0, as we can see with the next command
 type c:c
+
+# SEEMS that the general commands works better with the syntax k1:k2 instead of only k1, see teh next lines
+# Also please see the use of the 'ttl' command to see how many seconds before a expiration
+set nome "andre"
+# return OK
+set nome "andre" ex 60
+# return OK
+ttl andre
+# return -2
+set nome2 "andre"
+# return OK
+ttl andre2
+# return  -2
+set user:name "andre" ex 60
+# return OK
+ttl user:name
+# return example (integer) 53
+ttl user:name
+# return example (integer) 52
+ttl user:name
+# return example (integer) 51
+set user2:name "andre"
+# return OK
+ttl user2:name
+# return (integer) -1
 ```
