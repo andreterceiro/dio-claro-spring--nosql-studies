@@ -270,3 +270,33 @@ redis-cli
 ```
 
 I followed the tutorial of [this link](https://linuxhint.com/install_redis_linux_mint/). I installed in Linux Mint 20.
+
+Some tests of Redis using `redis-cli`:
+
+```
+# It was possible to save a value this way. See, without equals sign
+set user "Andre"
+
+# or this way, also without equals sign
+set user:name "Andre"
+
+# we can store a JSON
+set user "{'name': 'Andre', 'age': 42}
+
+# to retrieve a value we only need a
+# get key
+# Examples
+get user
+get user.name
+
+# But at least for now, if I store a JSON, I could not use the commands 'set'/'get'. It was needed to use the commands 'hmset'/'hmget'. Examples:
+# Is a little obvious the structure of the command
+# hmset group_key specifc_key1 value1 specific_value2 value2
+hmset person name "andre" age 42
+
+# Then you can retrive the value using the command hmget. Example:
+hmget person name
+
+# But remember, you can't access the entire group of information. The next command WILL NOT WORK:
+hmget person
+```
