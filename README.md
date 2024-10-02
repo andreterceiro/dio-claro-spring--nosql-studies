@@ -406,4 +406,12 @@ ttl user2:name
 set user:name "andre" ex 60
 pttl user:name
 # return 51703 (example)
+
+# You can also delete a key-value with the command "del"
+get user:name
+# return "andre"
+del user:name
+# return (integer) 1
+get user:name
+#return (nil)
 ```
