@@ -227,7 +227,8 @@ Other clausules. Cassandra seems more next to relational databases than DynamoDB
 
 ![example-4-cql](images/cql-demo-4.png)
 
-# Key-value
+
+## Key-value
 
 ![key value](images/key-value.png)
 
@@ -415,3 +416,10 @@ del user:name
 get user:name
 #return (nil)
 ```
+
+
+# Document based
+
+Definition:
+
+![definition](images/definition-document-based.png)
