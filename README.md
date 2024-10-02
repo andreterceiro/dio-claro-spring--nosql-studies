@@ -239,3 +239,7 @@ In a key-value database the data to be stored can be simple or complex.
 - Uses: cache, user sessions, carts (next to cassandra uses).
 
 ![ranking key value databases](images/ranking-key-value-databases.png)
+
+Main characteristics of `Redis`:
+
+![main characteristics of Redis](images/redis-main-characteristics.png)
