@@ -401,4 +401,9 @@ set user2:name "andre"
 # return OK
 ttl user2:name
 # return (integer) -1
+
+# To have the result used in milisseconds, please use "pttl"
+set user:name "andre" ex 60
+pttl user:name
+# return 51703 (example)
 ```
