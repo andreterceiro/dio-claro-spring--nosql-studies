@@ -422,4 +422,8 @@ get user:name
 
 Definition:
 
-![definition](images/definition-document-based.png)
+![definition - document based](images/definition-document-based.png)
+
+Ranking of databases NoSQL document based:
+
+![ranking NoSQL document based](images/ranking-databases-document-based.png)
