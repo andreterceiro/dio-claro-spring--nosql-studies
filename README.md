@@ -361,4 +361,19 @@ type user
 # return string
 type usuario
 # return none
+
+# SEEMS that numeric values are stored also as strings, see:
+lpush g:g 1
+# return (integer) 1
+lpush g:g 2
+# return 2
+lrange g:g 0 1
+# return
+# 1) "2"
+# 2) "1"
+
+# You cannot specify an index in the "type" command, see
+type c:c 0
+# Don't work, although we have the value on the position 0, as we can see with the next command
+type c:c
 ```
