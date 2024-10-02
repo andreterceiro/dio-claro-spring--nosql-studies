@@ -350,5 +350,15 @@ lrange c:C 0 3
 lpush c:c 100
 # return 5
 
-
+# To know the type of a variable, you can use the "type" command
+type c
+# return none
+type c:c
+# return list
+type
+# return (error) ERR wrong number of arguments for 'type' command
+type user
+# return string
+type usuario
+# return none
 ```
