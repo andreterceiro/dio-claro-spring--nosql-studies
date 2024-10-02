@@ -299,4 +299,18 @@ hmget person name
 
 # But remember, you can't access the entire group of information. The next command WILL NOT WORK:
 hmget person
+
+# You can specifyto the key-value be valid
+set user:name "Lula Molusco" EX 10
+
+# In this command the key will be expired in 10 seconds
+
+# You can also verify if exists a key-value pair this way
+exists user:name
+
+# The return:
+# 1 - exists
+# 0 - do not exists
+
+# One comment: the commands are case insensitive, the commands "exists" and "EXISTS" work and are the same
 ```
