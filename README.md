@@ -427,3 +427,5 @@ Definition:
 Ranking of databases NoSQL document based:
 
 ![ranking NoSQL document based](images/ranking-databases-document-based.png)
+
+MongoDB is not only the leader talking about databases NoSQL document based, but NoSQL in general!
