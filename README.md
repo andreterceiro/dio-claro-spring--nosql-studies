@@ -230,3 +230,10 @@ Other clausules. Cassandra seems more next to relational databases than DynamoDB
 # Key-value
 
 ![key value](images/key-value.png)
+
+In a key-value database the data to be stored can be simple or complex.
+
+- Good performance;
+- Less capacity of searches.
+- Cassandra (comlums, columnfamily) was based on DynamoDB (key-value);
+- Uses: cache, user sessions, carts (next to cassandra uses).
