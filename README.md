@@ -243,3 +243,5 @@ In a key-value database the data to be stored can be simple or complex.
 Main characteristics of `Redis`:
 
 ![main characteristics of Redis](images/redis-main-characteristics.png)
+
+In Redis there is a key-value storage without a schema. There is no a thing like a table.
