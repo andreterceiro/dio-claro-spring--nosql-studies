@@ -456,3 +456,45 @@ Some characterisics:
   - when you need ACID properties;
 - maybe you solution mix in different parts a database with support to ACID properties and MongoDB in a part of the system that do not need ACID properties;
 - example of companies that uses MongoDB: Globo, LinkedIN, MTV.
+
+#### Container Docker of MongoDB and running MongoDB locally
+
+Create with the file "docker-compose.yml" (this file is in the root of this repositpory)
+
+We will use the "volumes" directory that is in the root of the this repository.
+
+To create the container, in the root of the working copy of this repository, please run this command:
+
+```
+sudo docker-compose up
+```
+
+We do not expect any errors. To see the container running please use the next command:
+
+```
+sudo docker container ps
+```
+
+I used the following command to install the MongoDB client in Linux Mint 20:
+
+```
+sudo apt install mongodb-dev mongo-tools mongodb-clients
+```
+
+The `docker-compose.yml` that I created was in "`configurations/docker-compose.yml`". I received this error when trying to use MongoDB with Docker:
+
+![Docker problem](images/docker-problem.png)
+
+In certain situation it was possible to use the container, but in `sudo docker ps` sometimes the port was not showed. When it is showed, the container reestarts.
+
+So I installed MongoDB locally with this command:
+
+```
+sudo apt install mongodb-server
+```
+
+So the command to connect changed. I used this command:
+
+```
+mongo -host 127.0.0.1
+```
