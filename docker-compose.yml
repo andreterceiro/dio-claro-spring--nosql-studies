@@ -6,9 +6,9 @@ services:
     container_name: db
     restart: always
     environment:
-      - MONGO_INITBD_ROOT_USERNAME = dio
-      - MONGO_INITBD_ROOT_PASSWORD = dio
+      - MONGO_INITBD_ROOT_USERNAME=dio
+      - MONGO_INITBD_ROOT_PASSWORD=dio
     ports:
       - "27017:27017"
     volumes:
-      - /srv/www/raiz/diversos/dio/diversos/NoSQLStudies/volumes/dbdata: /data/db
+      - /srv/www/raiz/diversos/dio/diversos/NoSQLStudies/volumes/dbdata:/data/db
