@@ -498,3 +498,9 @@ So the command to connect changed. I used this command:
 ```
 mongo -host 127.0.0.1
 ```
+
+Then I downloaded Studio 3T from [this link](https://studio3t.com). I extracted the installer from the tar file after the download with the command "`tar -xvzf <file>.tar.gz`".
+
+After, I need to run the installer and select the most obvious options of the installer. In the first run of the Studio 3T I need to registrate the tool.
+
+In the tool I used the most obvoius and default options, except that I created a mannual connection to `"localhost"`.
