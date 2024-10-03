@@ -5,7 +5,7 @@
 
 ## Introducton - needs
 
-Needs foor NoSQL:
+Needs for NoSQL:
 
 - Some specialists say that the "we" double the volume of data stored every year;
 - "We" develop more and more apps with a non conventional behaviour;
