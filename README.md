@@ -418,7 +418,7 @@ get user:name
 ```
 
 
-# Document based
+## Document based
 
 Definition:
 
@@ -429,3 +429,30 @@ Ranking of databases NoSQL document based:
 ![ranking NoSQL document based](images/ranking-databases-document-based.png)
 
 MongoDB is not only the leader talking about databases NoSQL document based, but NoSQL in general!
+
+
+### MongoDB
+
+Some characterisics:
+
+- open source;
+- high performance;
+- schema-free, you don't need to predefine some schemas. This is not a good pratice, but inside of the same collection you can have documents with different structure;
+- uses bson for the documents, a json with binaries;
+- support indexes to increase the speed in the searches;
+- auto-sharding, what helps us in the horizontal scaling;
+- support to map-reduce;
+- gridfs;
+- a rich language to help us in the searches;
+- document => tupla/registry;
+- collection => table. Remember, the colection do not have a rigid structure, can contain documents with different formats;
+- embedding/linking => join;
+- Although we have the embedding/linking, ideally inside a document we have is all what the document needs. Example: for a user we have all of this phones or differents addresses inside the document who talks about the user, not in a document to be linked;
+- when we have to use MongoDB:
+  - high data volume;
+  - unstructured data;
+- when you normally must not use MongoDB:
+  - when you need relationship between documents or joins;
+  - when you need ACID properties;
+- maybe you solution mix in different parts a database with support to ACID properties and MongoDB in a part of the system that do not need ACID properties;
+- example of companies that uses MongoDB: Globo, LinkedIN, MTV.
