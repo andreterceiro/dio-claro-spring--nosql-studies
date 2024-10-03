@@ -504,3 +504,22 @@ Then I downloaded Studio 3T from [this link](https://studio3t.com). I extracted 
 After, I need to run the installer and select the most obvious options of the installer. In the first run of the Studio 3T I need to registrate the tool.
 
 In the tool I used the most obvoius and default options, except that I created a mannual connection to `"localhost"`.
+
+
+#### MongoDB cloud
+
+I created a trial account in [this MongoDB site](http://mongodb.com). But I got this error after ceating the accont with my Gmail:
+
+![error MongoDB cloud](images/mongodb-cloud-error.png)
+
+In the class the teacher:
+- First created a cluster;
+- After she included the local IP that the external world knows (not the localhost) to the allowed hosts list to connect;
+- Then she added a new database user with the permission "read write o any database";
+- Then she connect through the localhost using MongoDB shell;
+- Then show executed the command `"show databases"` in the MongoDB shell and verified that the databases where presented and no errors was showed;
+- Then she connected through MongoDB Compass, other MongoDB client. She got the URL to connect form the MongoDB cloud.
+
+In the MongoDB Compass interface she saw a that we have a cluster formed by 3 machines after connect, please see the next image (hosts section in the left area of the image):
+
+![MongoDB in cloud with 3 machines](images/mongodb-cloud-3-machines.png)
