@@ -587,3 +587,16 @@ use <database-name> # Create a database with the name <database-name> or uses an
 ```
 
 To create a collection inside a database you can explicit create a collection or insert data in a non existent database. The difference is that in the first case you can establish some constraints.
+
+Examples:
+
+```
+# expliciting creating a collection
+db.createCollection("test", {capped: true, max: 2, size: 2})
+# Constraints
+# capped: the collection will be limited
+# max: max of documents
+# size: maximun size in bytes to a capped collection
+```
+
+To all configuration parameters, please see [this link](https://www.mongodb.com/pt-br/docs/manual/reference/method/db.createCollection/).
