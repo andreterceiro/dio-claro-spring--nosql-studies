@@ -720,3 +720,10 @@ db.cebola.find({"name": "andre"})
 # { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
 # { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 45 }
 ```
+
+We can also pass a "`limit`":
+```
+db.cebola.find({"name": "andre"})
+# Return example:
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+```
