@@ -540,3 +540,7 @@ Although `MongoDB` has the command `lookup`, `MongoDB` do not have the concept o
 Comparing embedding to reference:
 
 ![embedding x reference - comparison](images/embedding-x-reference-comparison.png)
+
+Atomicity in MongoDB is only valid in a single document.
+
+MongoBD has a limit of 16MB per document.
