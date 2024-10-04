@@ -650,3 +650,31 @@ db.banana.find({})
 ```
 
 You can also use the "`save()`" function without passing "_id": a new document will be created.
+
+The command save updates all the collection, but you can also update only some fields of the collection.
+
+```
+db.banana.update({"name": "andre"}, {$set: {"age": 42}})
+# Return
+# WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+db.banana.find({})
+# Return example
+# { "_id" : ObjectId("67005ff16a36c359666484c9"), "name" : "andre", "age" : 42 }
+
+db.banana.update({"name": "andre"}, {"age": 43} )
+# Return example
+# WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+db.banana.find({})
+# Return example
+# { "_id" : ObjectId("67005ff16a36c359666484c9"), "age" : 43 }
+
+db.banana.update({"name": "andre"}, {"height": 43} )
+# Return
+# WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+
+db.banana.find({})
+# Return example
+# { "_id" : ObjectId("67005ff16a36c359666484c9"), "age" : 43 }
+```
