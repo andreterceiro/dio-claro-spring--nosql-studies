@@ -816,3 +816,43 @@ db.cebola.find({age: {$lte: 43}})
 { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
 
 ```
+
+"`deleteOne`" or "`deleteMany`". If the clausule to limit the registers to be deleted return more han one, in the first case only one document will be deleted, but in the second case many documents will be deleted:
+
+```
+db.cebola.find()
+# Return example
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+
+db.cebola.deleteOne({"name": "andre"})
+# Return
+{ "acknowledged" : true, "deletedCount" : 1 }
+
+db.cebola.find()
+# Return example
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+
+db.cebola.insertOne({"name": "andre", "age": 42})
+# Return example
+# {
+# 	"acknowledged" : true,
+# 	"insertedId" : ObjectId("670075fc6a36c359666484d0")
+# }
+
+db.cebola.find()
+# Return example
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+# { "_id" : ObjectId("670075fc6a36c359666484d0"), "name" : "andre", "age" : 42 }
+
+db.cebola.deleteMany({"name": "andre"})
+# Return
+# { "acknowledged" : true, "deletedCount" : 2 }
+
+db.cebola.find()
+# Return example
+{ "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+```
