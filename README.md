@@ -575,3 +575,15 @@ Good pratices:
 ## BSON x JSON
 
 BSON is how MongoDB stores the information. Is only a codified and serialized form of the documents that seems a JSON. BSON also have no the limit of JSON to store only scalars.
+
+
+## Some MongoDB commands
+
+Here is a list of MongoDB's commands:
+
+```
+show databases # list all databases
+use <database-name> # Create a database with the name <database-name> or uses an existent database
+```
+
+To create a collection inside a database you can explicit create a collection or insert data in a non existent database. The difference is that in the first case you can establish some constraints.
