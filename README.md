@@ -856,3 +856,5 @@ db.cebola.find()
 # Return example
 { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
 ```
+
+Teacher also instructed us to access [this official part of the documentation](https://www.mongodb.com/pt-br/docs/manual/tutorial/query-documents/).
