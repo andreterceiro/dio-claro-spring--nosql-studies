@@ -605,3 +605,15 @@ To all configuration parameters, please see [this link](https://www.mongodb.com/
 # implict creating a collection
 db.abc.insertOne({"name": "josé"})
 ```
+
+To verify a constraint in the table test that we created above, please insert 3 documents, as we have a constraint that limit the collection to have only 2 documents:
+
+```
+db.test.insertOne({"name": "andre"})
+db.test.insertOne({"name": "fatima"})
+db.test.insertOne({"name": "julio"})
+
+# as you can see in the next command, we will have only 2 documents inside the "test" collection
+# the first document was removed to insert the third
+db.test.find({})
+```
