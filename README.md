@@ -803,3 +803,16 @@ db.cebola.find({age: {$lt: 44}})
 { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
 { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
 ```
+
+We have "`lte`" also (lower than or equals):
+```
+db.cebola.find({age: {$lt: 43}})
+# Return example:
+{ "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+
+db.cebola.find({age: {$lte: 43}})
+# Return example:
+{ "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
+{ "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+
+```
