@@ -569,4 +569,9 @@ Good pratices:
 - use "`explain()`" to analyze your queries;
 - update only the necessary parts of your document and not all the document;
 - avoid negation in queries because this will not use indexes;
-- array and lists do not have to grow without limit - performance problem;
+- array and lists do not have to grow without limit - performance problem.
+
+
+## BSON x JSON
+
+BSON is how MongoDB stores the information. Is only a codified and serialized form of the documents that seems a JSON. BSON also have no the limit of JSON to store only scalars  
