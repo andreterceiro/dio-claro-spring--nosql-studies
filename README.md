@@ -785,3 +785,12 @@ db.cebola.find({"age": {$in: [43, 45]}})
 # { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
 # { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
 ```
+
+Using the "`or`" operator:
+
+```
+db.cebola.find({$or: [{age: 43}, {name: "Enzo"}]})
+# Return example
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
+```
