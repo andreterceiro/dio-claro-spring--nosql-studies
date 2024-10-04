@@ -875,3 +875,15 @@ Finding by **id** and using an `explain` to get details of the query execution:
 ![find by id](images/find-by-id.png)
 
 In the previous image you can see in the left part the index in the **id** field (\_id\_).
+
+Let's find by a field without an index:
+
+![find without index](images/find-without-index.png)
+
+As you can see in he previous image, it was necessary to MongoDB to see all the documents (10000 in total).
+
+But you can create an index:
+
+![creating an index](images/creating-an-index.png)
+
+You can use `db.<collection-name>` instead of `db.getCollection(<collection-name>)`
