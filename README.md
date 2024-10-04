@@ -600,3 +600,8 @@ db.createCollection("test", {capped: true, max: 2, size: 2})
 ```
 
 To all configuration parameters, please see [this link](https://www.mongodb.com/pt-br/docs/manual/reference/method/db.createCollection/).
+
+```
+# implict creating a collection
+db.abc.insertOne({"name": "josé"})
+```
