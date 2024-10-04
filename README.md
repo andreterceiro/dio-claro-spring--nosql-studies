@@ -536,3 +536,7 @@ Please see the next image:
 Sometimes is difficult to put **all** the things related to a document in a single document.
 
 Although `MongoDB` has the command `lookup`, `MongoDB` do not have the concept of foreign keys.
+
+Comparing embedding to reference:
+
+![embedding x reference - comparison](images/embedding-x-reference-comparison.png)
