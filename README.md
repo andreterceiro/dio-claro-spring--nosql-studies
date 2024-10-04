@@ -544,3 +544,9 @@ Comparing embedding to reference:
 Atomicity in MongoDB is only valid in a single document.
 
 MongoBD has a limit of 16MB per document.
+
+It seems a little obvious, but is advantage of embedding: you update all the information of a document in a single operation.
+
+If you have to make another query to find for other document only **sometimes**, is not a problem to have the documents separatedely, but if you find for this information often, is better to have all parts in a single document - use embedding.
+
+If you use embedding maybe you will have a problem of consistency, because if you update an information in a document, if other documents has the same information, they will not be updated automatically.
