@@ -647,4 +647,6 @@ db.banana.save({ "_id" : ObjectId("67005ff16a36c359666484c9"), "name" : "andre" 
 db.banana.find({})
 # Return example:
 { "_id" : ObjectId("67005ff16a36c359666484c9"), "name" : "andre" }
-``` 
+```
+
+You can also use the "`save()`" function without passing "_id": a new document will be created.
