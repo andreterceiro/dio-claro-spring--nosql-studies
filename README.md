@@ -619,3 +619,9 @@ db.test.find({})
 ```
 
 On inserting a document using the command "`insertOne()`", the `ID` of the inserted document is returned.
+
+We can also insert a document with the "`insert()`" command. Using this command we can insert several documents. We need to pass an array to this command:
+
+```
+db.test.insert([{"name": "Enzo", "age": 11}, {"name": "Fátima"}])
+```
