@@ -558,3 +558,7 @@ One to few relationship:
 Talking about relationships **to many** (one to many, many to many, no only to **few** documents):
 
 ![one or many   to many relationship](images/x-to-many-relationship.png)
+
+Patterns related to MongoDB:
+
+![patterns related to MongoDB](images/patterns-mongodb.png)
