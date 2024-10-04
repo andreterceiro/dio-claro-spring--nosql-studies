@@ -690,3 +690,11 @@ db.cebola.update({"name": "andre"}, $set: {{"age": 43}}, {"multi": true})
 ```
 
 ** Please see that in this case it was necessary to use "`$set`".
+
+We can also use the command "`updateMany`" to not use **"{multi: true}"**
+
+```
+db.cebola.updateMany({"name": "andre"}, $set: {{"age": 43}}, {"multi": true})
+```
+
+We did not use the parameter **"{multi: true}"**, but it still was necessary to use **"$set"**.
