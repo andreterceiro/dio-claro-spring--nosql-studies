@@ -562,3 +562,11 @@ Talking about relationships **to many** (one to many, many to many, no only to *
 Patterns related to MongoDB:
 
 ![patterns related to MongoDB](images/patterns-mongodb.png)
+
+Good pratices:
+- avoid too big documents;
+- use objective and short fields. Remember: different to relational databases, in NoSQL databases, as you do not have a fixed schema, you have to store the field name also;
+- use "`explain()`" to analyze your queries;
+- update only the necessary parts of your document and not all the document;
+- avoid negation in queries because this will not use indexes;
+- array and lists do not have to grow without limit - performance problem;
