@@ -625,3 +625,26 @@ We can also insert a document with the "`insert()`" command. Using this command 
 ```
 db.test.insert([{"name": "Enzo", "age": 11}, {"name": "Fátima"}])
 ```
+
+Some information is returned when we use this command, as example the number of inserted documents.
+
+Using the `save()` method you can insert a document or update a document. To update a document, you have to pass the _id created by MongoDB. See:
+
+```
+db.banana.save({ "_id" : ObjectId("67005ff16a36c359666484c9"), "name" : "andrew" })
+# Return example. Example because probably be returned another '_id'
+# WriteResult({
+#	 "nMatched" : 0,
+#	 "nUpserted" : 1,
+#	 "nModified" : 0,
+#	 "_id" : ObjectId("67005ff16a36c359666484c9")
+# })
+
+db.banana.save({ "_id" : ObjectId("67005ff16a36c359666484c9"), "name" : "andre" })
+# Return example:
+# WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+db.banana.find({})
+# Return example:
+{ "_id" : ObjectId("67005ff16a36c359666484c9"), "name" : "andre" }
+``` 
