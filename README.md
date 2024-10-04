@@ -554,3 +554,7 @@ If you use embedding maybe you will have a problem of consistency, because if yo
 One to few relationship:
 
 ![one to few relationship](images/one-to-few-relationship.png)
+
+Talking about relationships **to many** (one to many, many to many, no only to **few** documents):
+
+![one or many   to many relationship](images/x-to-many-relationship.png)
