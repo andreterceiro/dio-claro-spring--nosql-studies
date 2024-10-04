@@ -574,4 +574,4 @@ Good pratices:
 
 ## BSON x JSON
 
-BSON is how MongoDB stores the information. Is only a codified and serialized form of the documents that seems a JSON. BSON also have no the limit of JSON to store only scalars  
+BSON is how MongoDB stores the information. Is only a codified and serialized form of the documents that seems a JSON. BSON also have no the limit of JSON to store only scalars.
