@@ -858,3 +858,12 @@ db.cebola.find()
 ```
 
 Teacher also instructed us to access [this official part of the documentation](https://www.mongodb.com/pt-br/docs/manual/tutorial/query-documents/).
+
+
+## Indexes
+
+`Indexes` are `similar` to indexes of `relational databases`.
+
+To the class the teacher made this bulk insert using Robo3T. As you can see, is a `JavaScript` script to make the loop to make the bulk insert:
+
+![bulk-insert](images/bulk-insert.png)
