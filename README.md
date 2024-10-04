@@ -678,3 +678,5 @@ db.banana.find({})
 # Return example
 # { "_id" : ObjectId("67005ff16a36c359666484c9"), "age" : 43 }
 ```
+
+As you can see, you can insert new nodes in a document using **"$set"**, but without using **"$set"** you can only update existing nodes. 
