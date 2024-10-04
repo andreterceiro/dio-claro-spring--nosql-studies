@@ -523,3 +523,16 @@ In the class the teacher:
 In the MongoDB Compass interface she saw a that we have a cluster formed by 3 machines after connect, please see the next image (hosts section in the left area of the image):
 
 ![MongoDB in cloud with 3 machines](images/mongodb-cloud-3-machines.png)
+
+
+## Schema design - good pratices
+
+### Embedding x reference
+
+Please see the next image:
+
+![embedding x reference](images/embedding-x-reference.png)
+
+Sometimes is difficult to put **all** the things related to a document in a single document.
+
+Although `MongoDB` has the command `lookup`, `MongoDB` do not have the concept of foreign keys.
