@@ -727,3 +727,37 @@ db.cebola.find({"name": "andre"})
 # Return example:
 # { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
 ```
+
+If we pass more than one field to **"find()"**, it will be executed an AND with all the passed fields. Example:
+
+```
+db.cebola.find({})
+# Return example:
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "age" : 42 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo" }
+
+db.cebola.update({ "_id" : ObjectId("6700687a6a36c359666484ce")}, {name: "andre", "age" : 42 })
+# Return example:
+# WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+db.cebola.find({})
+# Return example
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 42 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo" }
+
+db.cebola.update({ "_id" : ObjectId("6700687a6a36c359666484ce")}, {$set:{"age" : 43 }})
+# Return example
+# WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+db.cebola.find({})
+# Return example:
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 43 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo" }
+
+db.cebola.find({"name": "andre", "age": 45})
+# Return example
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+```
