@@ -867,3 +867,11 @@ Teacher also instructed us to access [this official part of the documentation](h
 To the class the teacher made this bulk insert using Robo3T. As you can see, is a `JavaScript` script to make the loop to make the bulk insert:
 
 ![bulk-insert](images/bulk-insert.png)
+
+MongoDB automatically create an `index` to the **"id"** column.
+
+Finding by **id** and using an `explain` to get details of the query execution:
+
+![find by id](images/find-by-id.png)
+
+In the previous image you can see in the left part the index in the **id** field (\_id\_).
