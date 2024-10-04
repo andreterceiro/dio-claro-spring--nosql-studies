@@ -617,3 +617,5 @@ db.test.insertOne({"name": "julio"})
 # the first document was removed to insert the third
 db.test.find({})
 ```
+
+On inserting a document using the command "`insertOne()`", the `ID` of the inserted document is returned.
