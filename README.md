@@ -698,3 +698,25 @@ db.cebola.updateMany({"name": "andre"}, $set: {{"age": 43}}, {"multi": true})
 ```
 
 We did not use the parameter **"{multi: true}"**, but it still was necessary to use **"$set"**.
+
+The parameter of the find function is like the "where" clausule in SQL databases.
+
+```
+db.cebola.insertOne({"name": "Enzo"})
+# Return example:
+# {
+#	 "acknowledged" : true,
+#	 "insertedId" : ObjectId("67006d406a36c359666484cf")
+# }
+
+db.cebola.find({})
+# Return example:
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo" }
+
+db.cebola.find({"name": "andre"})
+# Return example:
+# { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
+# { "_id" : ObjectId("6700687a6a36c359666484ce"), "name" : "andre", "age" : 45 }
+```
