@@ -766,7 +766,7 @@ db.cebola.find({"name": "andre"})
 
 We can also pass a "`limit`":
 ```
-db.cebola.find({"name": "andre"})
+db.cebola.find({"name": "andre"}).limit(1)
 # Return example:
 # { "_id" : ObjectId("670068786a36c359666484cd"), "name" : "andre", "age" : 45 }
 ```
