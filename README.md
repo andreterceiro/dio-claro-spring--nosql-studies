@@ -913,10 +913,15 @@ Teacher also showed us `$addFields`. Observations:
 - Is also a parameter of the aggregate function;
 - Adds a field to a result, but only to the result, the field is not inserted in the database.
 
-![add-fields](images/add-fields.png)
+![add fields](images/add-fields.png)
 
 Using "`$max`" and "`$sum`":
 
 ![$max](images/max.png)
 
 "`min`" can be used the same way. "`avg`" (average) needs to be applied to a number field. But the way to use is the same that the teacher used to "`$max`" and "`$sum`" in the previous image.
+
+To use "`$and`", "`$or`", "`$nor`" and "`$not`" we need to use "`match`" to indicate that we wanna filter the results, see the example with "`and`":
+![using and](images/and.png)
+
+To use as example "`$or`" and not "`$and`", you need to change "`$and`" by "`$or`" in the previous image.
