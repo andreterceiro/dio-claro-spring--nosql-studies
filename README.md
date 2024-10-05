@@ -914,3 +914,9 @@ Teacher also showed us `$addFields`. Observations:
 - Adds a field to a result, but only to the result, the field is not inserted in the database.
 
 ![add-fields](images/add-fields.png)
+
+Using "`$max`" and "`$sum`":
+
+![$max](images/max.png)
+
+"`min`" can be used the same way. "`avg`" (average) needs to be applied to a number field. But the way to use is the same that the teacher used to "`$max`" and "`$sum`" in the previous image.
