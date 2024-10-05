@@ -193,7 +193,7 @@ Talking about columns and columnfamilies:
 
 ![column, columnfamily](images/column-columnfamily.png)
 
-In a non relational world we have fo every column:
+In a non relational world we have for every column:
 
 - key
 - values
