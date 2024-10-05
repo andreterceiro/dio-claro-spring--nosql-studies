@@ -396,7 +396,7 @@ type usuario
 lpush g:g 1
 # returns (integer) 1
 lpush g:g 2
-# returns 2
+# return 2
 lrange g:g 0 1
 # returns
 # 1) "2"
@@ -409,8 +409,10 @@ get age
 
 # You cannot specify an index in the "type" command, see
 type c:c 0
-# Don't work, although we have the value on the position 0, as we can see with the next command
+# The next command works. The previous not
 type c:c
+# returns list
+# the variable is c:c and not a hask c with a key c
 
 # SEEMS that the general commands works better with the syntax k1:k2 instead of only k1, see teh next lines
 # Also please see the use of the 'ttl' command to see how many seconds before a expiration
