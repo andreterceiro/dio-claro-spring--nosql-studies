@@ -895,4 +895,8 @@ You can use compound indexes, unique indexes and other variations.
 
 Definition:
 
-![aggregations definition](images/aggregations-definition.png)
+![aggregations - definition](images/aggregations-definition.png)
+
+Count - example:
+
+![count - example](images/count-example.png)
