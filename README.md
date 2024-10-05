@@ -382,21 +382,21 @@ lpush c:c 100
 
 # To know the type of a variable, you can use the "type" command
 type c
-# return none
+# returns none
 type c:c
-# return list
+# returns list
 type
-# return (error) ERR wrong number of arguments for 'type' command
+# returns (error) ERR wrong number of arguments for 'type' command
 type user
-# return string
+# returns string
 type usuario
-# return none
+# returns none
 
 # SEEMS that numeric values are stored also as strings, see:
 lpush g:g 1
-# return (integer) 1
+# returns (integer) 1
 lpush g:g 2
-# return 2
+# returns 2
 lrange g:g 0 1
 # returns
 # 1) "2"
