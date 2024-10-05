@@ -83,7 +83,7 @@ About Neo4j:
 
 In the class we used [this sandbox](https://sandbox.neo4j.com/) of Neo4j.
 
-We created a balnk database and in this blank database we could create a registry using the next command:
+We created a blank database and in this blank database we could create a registry using the next command:
 
 ```
 create (:Client {name: "Bob Esponja", age: 28, hobbiees:["Caçar água-viva", "comer hamburguer"]})
