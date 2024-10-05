@@ -925,3 +925,8 @@ To use "`$and`", "`$or`", "`$nor`" and "`$not`" we need to use "`match`" to indi
 ![using and](images/and.png)
 
 To use as example "`$or`" and not "`$and`", you need to change "`$and`" by "`$or`" in the previous image.
+
+Comparison operators:
+![comparison operators](images/comparison-operators.png)
+
+Special attention to the opperator to express `different` Is not "<strike>neq</strike>". Is "`nte`".
