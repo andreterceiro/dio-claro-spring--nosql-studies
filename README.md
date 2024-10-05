@@ -719,7 +719,7 @@ db.banana.find({})
 
 As you can see, you can insert new nodes in a document using **"$set"**, but without using **"$set"** you can only update existing nodes.
 
-The update command maybe updates more than one document, based in the criteria we passed to the command. The first parameter of the command is the criteria and the second is the modifications that we want. To update moer than one document we need to pass a third parameter to this command, as example:
+The update command maybe updates more than one document, based in the criteria we passed to the command. The first parameter of the command is the criteria and the second is the modifications that we want. To update more than one document we need to pass a third parameter to this command, as example:
 
 ```
 db.cebola.insertOne({"name": "andre", "age": 42})
