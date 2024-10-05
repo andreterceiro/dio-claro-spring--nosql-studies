@@ -904,3 +904,7 @@ Count - example:
 Distinct (non duplicated values based on one column) - example:
 
 ![distinct - example](images/distinct-example.png)
+
+In the next image please see the use of the "`$group`" operator. The teacher grouped the results by the type of the cuisine and summed the number of cuisines with each name.
+
+![$group](images/group.png)
