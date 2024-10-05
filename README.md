@@ -617,6 +617,12 @@ BSON is how MongoDB stores the information. Is only a codified and serialized fo
 
 ## Some MongoDB commands
 
+To use MongoDB in the terminal, after installing the client and the server (remember, we had an error to run the Docker container), please type in the terminal:
+
+```
+mongo
+```
+
 Here is a list of MongoDB's commands:
 
 ```
@@ -720,7 +726,6 @@ db.banana.find({})
 As you can see, you can insert new nodes in a document using **"$set"**, but without using **"$set"** you can only update existing nodes.
 
 The update command maybe updates more than one document, based in the criteria we passed to the command. The first parameter of the command is the criteria and the second is the modifications that we want. To update more than one document we need to pass a third parameter to this command, as example:
-
 ```
 db.cebola.insertOne({"name": "andre", "age": 42})
 db.cebola.insertOne({"name": "andre", "age": 42})
