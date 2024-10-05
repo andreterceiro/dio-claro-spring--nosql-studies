@@ -301,7 +301,7 @@ get player
 get player:name
 # returns "Enzo"
 
-# But at least for now, if I store a JSON, I could not use the commands 'set'/'get'. It was needed to use the commands 'hmset'/'hmget'. Examples:
+# But at least for now, if I store a JSON, I could not use the commands 'set'/'get'. It was necessary to use the commands 'hmset'/'hmget'. Examples:
 # Is a little obvious the structure of the command
 # hmset group_key specifc_key1 value1 specific_value2 value2
 hmset person name "andre" age 42
