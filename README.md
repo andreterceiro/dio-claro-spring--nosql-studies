@@ -236,7 +236,7 @@ In a key-value database the data to be stored can be simple or complex.
 
 - Good performance;
 - Less capacity of searches.
-- Cassandra (comlums, columnfamily) was based on DynamoDB (key-value);
+- Cassandra (columns, columnfamily) was based on DynamoDB (key-value);
 - Uses: cache, user sessions, carts (next to cassandra uses).
 
 ![ranking key value databases](images/ranking-key-value-databases.png)
