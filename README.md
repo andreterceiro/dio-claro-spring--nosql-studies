@@ -401,6 +401,11 @@ lrange g:g 0 1
 # return
 # 1) "2"
 # 2) "1"
+set age 42
+type age
+# returns string
+get age
+# returns 42
 
 # You cannot specify an index in the "type" command, see
 type c:c 0
