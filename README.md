@@ -346,31 +346,31 @@ exists user:name
 
 # Lists: you can interact with lists with the commands "lpush" and "lindex"
 lpush c:c 1
-# return: (integer) 1 - number of items in the stack
+# returns: (integer) 1 - number of items in the stack
 lpush c:c 2
-# return: (integer) 2 - number of items in the stack
+# returns: (integer) 2 - number of items in the stack
 lpush c:c 3
-# return: (integer) 3 - number of items in the stack
+# returns: (integer) 3 - number of items in the stack
 lpush c:c 4
-# return: (integer) 4 - number of items in the stack
+# returns: (integer) 4 - number of items in the stack
 
 # You have the data inserted, but in like a stack. See:
 lindex c:c 1
-# return:"3"
+# returns:"3"
 lindex c:c 2
-# return: "2"
+# returns: "2"
 lindex c:c 3
-# return: "1"
+# returns: "1"
 lindex c:c 4
 (nil)
 lindex c:c 0
-# return: "4"
+# returns: "4"
 
 # You can also use 'lrange'
 lrange c:c 0 0
-# return "4"
+# returns "4"
 lrange c:C 0 3
-# return - stack
+# returns - stack
 # 1) "4"
 # 2) "3"
 # 3) "2"
@@ -398,7 +398,7 @@ lpush g:g 1
 lpush g:g 2
 # return 2
 lrange g:g 0 1
-# return
+# returns
 # 1) "2"
 # 2) "1"
 set age 42
@@ -415,40 +415,40 @@ type c:c
 # SEEMS that the general commands works better with the syntax k1:k2 instead of only k1, see teh next lines
 # Also please see the use of the 'ttl' command to see how many seconds before a expiration
 set nome "andre"
-# return OK
+# returns OK
 set nome "andre" ex 60
-# return OK
+# returns OK
 ttl andre
-# return -2
+# returns -2
 set nome2 "andre"
-# return OK
+# returns OK
 ttl andre2
-# return  -2
+# returns  -2
 set user:name "andre" ex 60
-# return OK
+# returns OK
 ttl user:name
-# return example (integer) 53
+# returns example (integer) 53
 ttl user:name
-# return example (integer) 52
+# returns example (integer) 52
 ttl user:name
-# return example (integer) 51
+# returns example (integer) 51
 set user2:name "andre"
-# return OK
+# returns OK
 ttl user2:name
-# return (integer) -1
+# returns (integer) -1
 
 # To have the result used in milisseconds, please use "pttl"
 set user:name "andre" ex 60
 pttl user:name
-# return 51703 (example)
+# returns 51703 (example)
 
 # You can also delete a key-value with the command "del"
 get user:name
-# return "andre"
+# returns "andre"
 del user:name
-# return (integer) 1
+# returns (integer) 1
 get user:name
-#return (nil)
+# returns (nil)
 ```
 
 
@@ -705,7 +705,7 @@ db.banana.find({})
 # { "_id" : ObjectId("67005ff16a36c359666484c9"), "age" : 43 }
 
 db.banana.update({"name": "andre"}, {"height": 43} )
-# Return
+# Returns
 # WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
 
 db.banana.find({})
@@ -861,7 +861,7 @@ db.cebola.find()
 # { "_id" : ObjectId("67006d406a36c359666484cf"), "name" : "Enzo", "age" : 11 }
 
 db.cebola.deleteOne({"name": "andre"})
-# Return
+# Returns
 { "acknowledged" : true, "deletedCount" : 1 }
 
 db.cebola.find()
@@ -883,7 +883,7 @@ db.cebola.find()
 # { "_id" : ObjectId("670075fc6a36c359666484d0"), "name" : "andre", "age" : 42 }
 
 db.cebola.deleteMany({"name": "andre"})
-# Return
+# Returns
 # { "acknowledged" : true, "deletedCount" : 2 }
 
 db.cebola.find()
