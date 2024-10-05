@@ -900,3 +900,7 @@ Definition:
 Count - example:
 
 ![count - example](images/count-example.png)
+
+Distinct (non duplicated values based on one column) - example:
+
+![distinct - example](images/distinct-example.png)
