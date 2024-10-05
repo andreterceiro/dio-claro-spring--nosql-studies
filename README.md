@@ -282,7 +282,7 @@ set user "Andre"
 set user:name "Andre"
 
 # we can store a JSON
-set user "{'name': 'Andre', 'age': 42}
+set user {'name': 'Andre', 'age': 42}
 
 # to retrieve a value we only need a
 # get key
