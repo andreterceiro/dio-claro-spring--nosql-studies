@@ -290,6 +290,17 @@ set user {'name': 'Andre', 'age': 42}
 get user
 get user:name
 
+# An interesting thing, see:
+set player:name "Enzo"
+exists player
+# returns 0 - no
+exixts player:name
+# returns 1 - yes
+get player
+# returns (nil)
+get player:name
+# returns "Enzo"
+
 # But at least for now, if I store a JSON, I could not use the commands 'set'/'get'. It was needed to use the commands 'hmset'/'hmget'. Examples:
 # Is a little obvious the structure of the command
 # hmset group_key specifc_key1 value1 specific_value2 value2
