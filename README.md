@@ -493,6 +493,8 @@ Some characterisics:
 - maybe you solution mix in different parts a database with support to ACID properties and MongoDB in a part of the system that do not need ACID properties;
 - example of companies that uses MongoDB: Globo, LinkedIN, MTV.
 
+About sharding: [link](https://www.google.com.br/search?source=hp&ei=OqrwX8yKF-e95OUPgb-emAg&iflsig=AINFCbYAAAAAX_C4SiJdMvckrY7ZnMl9u2c7Gr1MRq0W&q=sharding&btnK=Pesquisa+Google&oq=mailto&gs_lcp=CgZwc3ktYWIQAzIFCAAQsQMyAggAMgIILjICCAAyAggAMgIIADICCAAyAggAMgIIADIICAAQxwEQrwE6CAgAELEDEIMBOgsIABCxAxDHARCjAjoOCAAQsQMQgwEQxwEQowI6CAguELEDEJMCOgUILhCxAzoICC4QsQMQgwE6DggAELEDEIMBEMcBEK8BOgQIABAKUOcFWMMmYIQsaAJwAHgAgAGJAYgBigiSAQMwLjiYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjMj-WL4P3tAhXnHrkGHYGfB4MQ4dUDCAc&uact=5)
+
 #### Container Docker of MongoDB and running MongoDB locally
 
 Create with the file "docker-compose.yml" (this file is in the root of this repositpory)
