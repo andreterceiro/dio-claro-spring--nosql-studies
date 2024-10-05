@@ -312,6 +312,21 @@ hmget person name
 # But remember, you can't access the entire group of information. The next command WILL NOT WORK:
 hmget person
 
+# A comment about using `hmset`/`hmget` and not `set group:key` and `get group:key`
+# you can use hmset
+hmset pessoa nome "andre"
+# Returns "OK"
+exists pessoa
+# Returns 1 !!!!!!!!!!!
+exists pessoa nome
+# Returns 1
+exists nome
+# Returns 0
+hmget pessoa
+# Error
+hmget pessoa nome
+# Returns "andre
+
 # You can specifyto the key-value be valid
 set user:name "Lula Molusco" EX 10
 
