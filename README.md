@@ -889,3 +889,10 @@ But you can create an index:
 You can use `db.<collection-name>` instead of `db.getCollection(<collection-name>)`.
 
 You can use compound indexes, unique indexes and other variations.
+
+
+## Aggregations
+
+Definition:
+
+![aggregations definition](images/aggregations-definition.png)
