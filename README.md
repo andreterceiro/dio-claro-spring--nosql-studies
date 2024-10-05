@@ -312,7 +312,7 @@ hmget person name
 # But remember, you can't access the entire group of information. The next command WILL NOT WORK:
 hmget person
 
-# A comment about using `hmset`/`hmget` and not `set group:key` and `get group:key`
+# A comment about using hmset/hmget and not "set group:key" and "get group:key"
 # you can use hmset
 hmset pessoa nome "andre"
 # Returns "OK"
@@ -326,6 +326,9 @@ hmget pessoa
 # Error
 hmget pessoa nome
 # Returns "andre
+
+# hmset/hmget are related to hashes, see the next link
+# https://medium.com/@engnogueirawgn/redis-hashes-7f6f6fb5c779v
 
 # You can specifyto the key-value be valid
 set user:name "Lula Molusco" EX 10
