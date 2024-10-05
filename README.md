@@ -908,3 +908,9 @@ Distinct (non duplicated values based on one column) - example:
 In the next image please see the use of the "`$group`" operator. The teacher grouped the results by the type of the cuisine and summed the number of cuisines with each name.
 
 ![$group](images/group.png)
+
+Teacher also showed us `$addFields`. Observations:
+- Is also a parameter of the aggregate function;
+- Adds a field to a result, but only to the result, the field is not inserted in the database.
+
+![add-fields](images/add-fields.png)
