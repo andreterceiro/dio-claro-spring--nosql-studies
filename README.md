@@ -421,7 +421,7 @@ set nome "andre"
 set nome "andre" ex 60
 # returns OK
 ttl andre
-# returns -2
+# returns -2. One comment: -2 after the expiration
 set nome2 "andre"
 # returns OK
 ttl andre2
